@@ -1,0 +1,33 @@
+site_name: Портфолио системного аналитика
+theme:
+  name: material
+  language: ru
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Ночь
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: День
+        
+  features:
+    - navigation.instant # ускорение загрузки (SPA)
+    - navigation.tracking # динамический URL страницы 
+    - navigation.tabs # перенос названий документов в горизонтальное меню
+    - navigation.tabs.sticky # горизонтальное меню не скрывается при прокрутке
+    - navigation.indexes # главные страницы разделов не отображаются в меню
+    - navigation.top # вкл. кнопку возврата наверх
+
+nav:
+  - Конспект:
+      - compendium/index.md
+  - Портфолио:
+      - portfolio/index.md
+
+plugins:
+  - search:
+      lang: 
+        - en
+        - ru
